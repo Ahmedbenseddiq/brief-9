@@ -44,11 +44,11 @@ class contoller_Bus {
        $Genra = $_POST["Genra"] ; 
        $ISBN = $_POST["ISBN"] ; 
 
-   $BookDAO = new BookDAO() ;
-   $Book = new Book(  $ISBN  ,  $Title , $Genra , 15 , 150 , "kamal") ;
+   $BookDAO = new BusDAO() ;
+   $Bus = new Bus(  $ISBN  ,  $Title , $Genra , 15 , 150 , "kamal") ;
 
 
-    $BookDAO->update_book($Book);
+    $BookDAO->update_bus($Bus);
 
     include "View\bookForm.php"  ; 
        
