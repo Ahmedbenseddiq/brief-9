@@ -19,7 +19,7 @@ class ScheduleDAO{
         $startCity = $schedule->getStartCity();
         $endCity = $schedule->getEndCity();
     
-        $query = "INSERT INTO `schedule` (`date`, `departureTime`, `arrivalTime`, `availableSeats`, `price`, `busNumber`, `startCity`, `endCity`) VALUES ('$date', '$departureTime', '$arrivalTime', '$availableSeats', '$price', '$busNumber', '$startCity', '$endCity')";
+        $query = "INSERT INTO `schedul` (`date`, `departureTime`, `arrivalTime`, `availableSeats`, `price`, `busNumber`, `startCity`, `endCity`) VALUES ('$date', '$departureTime', '$arrivalTime', '$availableSeats', '$price', '$busNumber', '$startCity', '$endCity')";
         
         $stmt = $this->db->prepare($query);
         $stmt->execute();
